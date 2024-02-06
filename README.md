@@ -6,8 +6,15 @@ This is the development kit repository for [the 2nd CVPR DataCV Challenge](https
 
 Have fun!
 
+## Overview (NEW)
+The 2nd DataCV Challenge is held in conjunction with the CVPR 2024 Visual Dataset Understanding workshop. It is the first of its kind in the community, where we focus on searching training sets for various targets. The competition is held via CodaLab and includes two phases. 
 
-## Overview
+## Task Overview (NEW)
+Training data search in object detection.  In the training set search challenge, we aim to search small-scale, yet highly effective training sets from a large-scale data pool such that a competitive target-specific model can be obtained. 
+
+--------------------------------------------------------------------
+
+## Overview (OLD)
 This year’s challenge focuses on **Training set optimization for object detection**, where the source and target domains have completely different classes (pedestrian IDs). The particular task is to retrieve the pedestrian instances of the same ID as the query image. This problem is significantly different from previous VisDA challenges, where the source and target domains share some overlapping classes. Moreover, ID matching depends on fine-grained details, making the problem harder than before.
 
 The competition will take place during May -- July 2020, and the top-performing teams will be invited to present their results at the workshop at [ECCV 2020](https://sites.google.com/view/task-cv2020) in September, Glasgow.
