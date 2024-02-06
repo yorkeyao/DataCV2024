@@ -25,10 +25,16 @@ The competition will take place during May -- July 2020, and the top-performing 
 
 ![enter image description here](https://github.com/sxzrt/The-PersonX-dataset/raw/master/images/logo1.jpg)
 
-The challenge uses synthetic data as the source, which is from [PersonX](https://github.com/sxzrt/Dissecting-Person-Re-ID-from-the-Viewpoint-of-Viewpoint) [1].
-The target domain consists of real-world images. We have provided camera index information for both source and target training sets. 
- - For the source dataset, it contains 20,280 images from 700 IDs, which are captured by 6 cameras. 
- - For the target dataset, only the target training set can be used for training models (Please follow the rules in [challenge website](http://ai.bu.edu/visda-2020/)). We also provide a fully labeled validation set for algorithm development. **Note that**, the IDs in the target training set are quite noisy, e.g., images of a person might come from one or multiple cameras, and the number of images per ID varies a lot. We believe this setting is more practical and is significantly different from the current setting [2]. We also provide the camera index of each target training image. 
+
+
+The Region100 benchmark consists of footage captured by 100 static cameras from various regions in the real world.
+For videos from each different region, the first 70% is used for model training, while the remaining 30% is designated for validation and testing.
+
+The target domain consists of real-world images from 100 regions in the world. In total, there are 21871 images. We have provided region camera index information for both source and target training sets. 
+ - For the training set, it contains 15,369 images.
+ - For the validate set, it contains 2,134 images.
+ - For the test set, it contains 4,368 images.
+
 
 The challenge dataset split is organized as follows: 
 ```
