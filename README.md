@@ -14,7 +14,7 @@ The competition will take place during May -- July 2020, and the top-performing 
 
 ## Challenge Data 
 
-[[GoogleDrive]](https://drive.google.com/open?id=18qIbI1XiG2n36qCTS-Te-2XATxiHNVDj) and [[OneDrive]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
+[[GoogleDrive]](https://drive.google.com/open?id=18qIbI1XiG2n36qCTS-Te-2XATxiHNVDj) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
 
 ![enter image description here](https://github.com/sxzrt/The-PersonX-dataset/raw/master/images/logo1.jpg)
 
@@ -61,7 +61,7 @@ The challenge dataset split is organized as follows:
 
 By downloading these datasets you agree to the following terms:
 
-### Naming Rule of the bboxes
+### Naming Rule of the images
 In bbox "0046_c5s1_004279_02", "c5" is the 5-th camera (there 6 cameras in training and 5 cameras in testing). "s1" is sequence 1 of camera 5. "004279" is the4279-th frame in the sequence "c5s1". The frame rate is 25 frames per sec.
 "0046" is the person ID.
 
