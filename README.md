@@ -101,14 +101,12 @@ The first three digits correspond to the region code, and the following six digi
 
 
 ### Terms of Use
-- You will use the data only for non-commercial research and educational purposes.
-- You will NOT distribute the images.
-- The organizers make no representations or warranties regarding the data, including but not limited to warranties of non-infringement or fitness for a particular purpose.
-- You accept full responsibility for your use of the data.
+- The data is to be utilized solely for research and educational purposes that do not seek profit. 
+- The distribution of images obtained from the data is prohibited. 
+- The providers of the data disclaim all guarantees, including but not limited to those concerning the violation of rights or the data's suitability for a specific use. 
+- Users assume all responsibility for their application of the data. 
 
-You can download the datasets with the following link: [GoogleDrive](https://drive.google.com/open?id=18qIbI1XiG2n36qCTS-Te-2XATxiHNVDj) and [OneDrive](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC).
-
-Moreover, we also provide translated images from SPGAN [2]. SPGAN conducts source-target image translation, such that the translated images follow the distribution of the target. Thus, the Re-ID model trained on the translated images achieves high accuracy on the test set. OneDrive: [PersonX_SPGAN](https://1drv.ms/u/s!AhjrHmxemkOgbIahEx1m49NDuDI?e=i9wE31) or GoogleDrive: [PersonX_SPGAN](https://drive.google.com/open?id=1HEV_EfnLAWU_a5pyeZ12yl5lRCeivDG-).
+The datasets are accessible for download via the following links: [GoogleDrive](https://drive.google.com/open?id=18qIbI1XiG2n36qCTS-Te-2XATxiHNVDj) and [OneDrive](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC).
 
 ### Download the Test Set
 - The test set is available [here](https://drive.google.com/file/d/12oWSOK1oQVhTNqoVUli70dboXOxPxG41/view?usp=sharing). You need to fill in the [google form](https://forms.gle/9hjryZ5WDUUEZTAX9) to get the password for unzipping files. If you can not open the form, please fill in the [form offline](https://github.com/Simon4Yan/VisDA2020/tree/master/form/) and send it to (weijian.deng@anu.edu.au).
