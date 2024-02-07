@@ -32,13 +32,13 @@ For videos from each different region, the first 70% is used for model training,
 
 The target domain consists of real-world images from 100 regions in the world. In total, there are 21871 images. We have provided region camera index information for both source and target training sets. 
  - For the training set, it contains 15,369 images.
- - For the validate set, it contains 2,134 images.
- - For the test set, it contains 4,368 images.
+ - For the test A set, it contains 2,134 images.
+ - For the test B set, it contains 4,368 images.
 
 
 The challenge dataset split is organized as follows: 
 ```
-├── challenge_datasets/
+├── Region100/
 (Source dataset collected from synthetic simulator)
 │   ├── personX/
 │       ├── image_train/                   /* source training images 
@@ -46,29 +46,26 @@ The challenge dataset split is organized as follows:
 |           ├── 0002_c3s1_23
 |           ...
 (Target dataset collected from real world)
-│   ├── target_training/  
-│       ├── label_target_training.txt     /* camera index 
-│       ├── image_train/
-|           ├── 00001.jpg
-|           ├── 00011.jpg
+│   ├── train/  
+│       ├── 001/
+|           ├── 001_000001.jpg
+|           ├── 001_000002.jpg
 |           ...
-│   ├── target_validation/               /* validation set
-│       ├── image_gallery/
-|           ├── 0000_c1s1_001036_07.jpg
-|           ├── 0000_c1s1_001046_06.jpg
+│       ├── 002/
+|           ├── 002_000001.jpg
+|           ├── 002_000002.jpg
 |           ...
-│       ├── image_query/
-|           ├── 0001_c1s1_000017_02.jpg
-|           ├── 0002_c4s1_000918_04.jpg
+│   ├── testA/               /* validation set
+│       ├── 001_000001.jpg
+│       ├── 001_000002.jpg
+│       ├── 001_000003.jpg
+│       ├── 001_000004.jpg
 |           ...
-│   ├── target_test                     /* test set
-│       ├── image_gallery
-|           ├── 000000.jpg
-|           ├── 000001.jpg
-|           ...
-│       ├── image_query/
-|           ├── 0000.jpg
-|           ├── 0001.jpg
+│   ├── testB                     /* test set
+│       ├── 001_000001.jpg
+│       ├── 001_000002.jpg
+│       ├── 001_000003.jpg
+│       ├── 001_000004.jpg
 |           ...
 ```
 
