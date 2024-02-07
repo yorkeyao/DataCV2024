@@ -93,7 +93,7 @@ The challenge dataset split is organized as follows:
 |           ...
 ```
 
-### Naming Rule of the images
+### Naming Rule of the Images
 The first three digits correspond to the region code, and the following six digits correspond to the image number within the region. For example, 001_000001.jpg is the first image captured from the first region camera. "001" is the region code, and "000001" is the image counting number.
 
 By downloading these datasets you agree to the following terms:
