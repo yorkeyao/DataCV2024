@@ -40,11 +40,36 @@ The challenge dataset split is organized as follows:
 ```
 ├── Region100/
 (Source dataset collected from synthetic simulator)
-│   ├── personX/
-│       ├── image_train/                   /* source training images 
-│           ├── 0001_c3s1_24
-|           ├── 0002_c3s1_23
+│   ├── source_pool/        /* source training images
+│       ├── voc_train/                    
+│           ├── VOC2007/
+|           ├── VOC2012
+│       ├── kitti_train/                    
+│           ├── 000000.png
+|           ├── 000001.png
 |           ...
+│       ├── coco_train/                    
+│           ├── 000000000009.jpg
+|           ├── 000000000025.jpg
+|           ...
+│       ├── cityscapes_train/                    
+│           ├── aachen_000000_000019_leftImg8bit.jpg
+|           ├── aachen_000001_000019_leftImg8bit.jpg
+|           ...
+│       ├── bdd_train/                    
+│           ├── 0a0a0b1a-7c39d841.jpg
+|           ├── 0a0b16e2-93f8c456.jpg
+|           ...
+│       ├── ade_train/                    
+│           ├── ADE_train_00000001.jpg
+|           ├── ADE_train_00000002.jpg
+|           ...
+│       ├── voc_annotation.json
+│       ├── kitti_annotation.json
+│       ├── coco_annotation.json
+│       ├── cityscapes_annotation.json
+│       ├── bdd_annotation.json
+│       ├── ade_annotation.json 
 (Target dataset collected from real world)
 │   ├── train/  
 │       ├── 001/
