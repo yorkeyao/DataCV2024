@@ -40,7 +40,7 @@ The challenge dataset split is organized as follows:
 ```
 ├── Region100/
 (Source dataset collected from synthetic simulator)
-│   ├── source_pool/        /* source training images
+│   ├── source_pool/              /* source training images
 │       ├── voc_train/                    
 │           ├── VOC2007/
 |           ├── VOC2012
@@ -71,7 +71,7 @@ The challenge dataset split is organized as follows:
 │       ├── bdd_annotation.json
 │       ├── ade_annotation.json 
 (Target dataset collected from real world)
-│   ├── train/  
+│   ├── train/                    /* training set
 │       ├── 001/
 |           ├── 001_000001.jpg
 |           ├── 001_000002.jpg
@@ -80,7 +80,7 @@ The challenge dataset split is organized as follows:
 |           ├── 002_000001.jpg
 |           ├── 002_000002.jpg
 |           ...
-│   ├── testA/               /* validation set
+│   ├── testA/                    /* validation set
 │       ├── 001_000001.jpg
 │       ├── 001_000002.jpg
 │       ├── 001_000003.jpg
