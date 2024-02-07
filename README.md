@@ -10,7 +10,7 @@ Have fun!
 --------------------------------------------------------------------
 
 ## Overview 
-This year’s challenge focuses on **Training set optimization for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on person and vehicle detection. 
+This year’s challenge focuses on **Training set optimization for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on person and vehicle detection. We newly introudce Regin100 as our target and reuse existing 6 well-known benchmark as source pool. 
 
 The competition will take place during Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
 
@@ -31,9 +31,9 @@ For videos from each different region, the first 70% is used for model training,
 The target domain consists of real-world images from 100 regions in the world. In total, there are 21871 images. We have provided region camera index information for both source and target training sets. 
  - For the training set, it contains 15,369 images.
  - For the test A set, it contains 2,134 images.
- - For the test B set, it contains 4,368 images.
+ - For the test B set, it contains 4,368 images. The test B set will be researved for final ranking. 
 
-The source pool  
+The source pool comprises datasets from six existing sources: ADE, BDD, Cityscapes, COCO, VOC, and KITTI. We have standardized the labeling format to match that of COCO, and filtered out labels that are not related to persons or vehicles. In total, the collection contains 161,789 images. 
 
 The challenge dataset split is organized as follows: 
 ```
@@ -85,7 +85,7 @@ The challenge dataset split is organized as follows:
 │       ├── 001_000003.jpg
 │       ├── 001_000004.jpg
 |           ...
-│   ├── testB                     /* test set
+│   ├── testB/                     /* test set
 │       ├── 001_000001.jpg
 │       ├── 001_000002.jpg
 │       ├── 001_000003.jpg
@@ -94,7 +94,7 @@ The challenge dataset split is organized as follows:
 ```
 
 ### Naming Rule of the images
-The first three digits correspond to the region code, and the following six digits correspond to the image number within the region. For example, 001_000001.jpg is the first image captured from the first region camera. "001" is the region code, and "000001" is the image number.
+The first three digits correspond to the region code, and the following six digits correspond to the image number within the region. For example, 001_000001.jpg is the first image captured from the first region camera. "001" is the region code, and "000001" is the image counting number.
 
 By downloading these datasets you agree to the following terms:
 
@@ -103,6 +103,8 @@ By downloading these datasets you agree to the following terms:
 - The distribution of images obtained from the data is prohibited. 
 - The providers of the data disclaim all guarantees, including but not limited to those concerning the violation of rights or the data's suitability for a specific use. 
 - Users assume all responsibility for their application of the data. 
+
+### Detection Model
 
 ## Feedback and Help
 If you find any bugs please [open an issue](https://github.com/yorkeyao/datacv2024/issues/new).
