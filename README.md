@@ -2,32 +2,30 @@
 
 Welcome to DataCV2024!
 
-This is the development kit repository for [the 2nd CVPR DataCV Challenge](https://sites.google.com/view/vdu-cvpr24/competition/). Here you can find details on how to download datasets, run baseline models, and evaluate the performance of your model. Evaluation can be performed remotely on the CodeLab evaluation server. Please see the main website for competition details, rules, and dates.
+This is the development kit repository for [the 2nd CVPR DataCV Challenge](https://sites.google.com/view/vdu-cvpr24/competition/). Here you can find details on how to download datasets, run baseline models, and evaluate the performance of your model. Evaluation can be performed remotely on the CodeLab evaluation server. Please also refer to the main website for competition details, rules, and dates.
 
 Have fun!
 
-## Overview (NEW)
-The 2nd DataCV Challenge is held in conjunction with the CVPR 2024 Visual Dataset Understanding workshop. It is the first of its kind in the community, where we focus on searching training sets for various targets. The competition is held via CodaLab and includes two phases. 
-
-## Task Overview (NEW)
-Training data search in object detection.  In the training set search challenge, we aim to search small-scale, yet highly effective training sets from a large-scale data pool such that a competitive target-specific model can be obtained. 
 
 --------------------------------------------------------------------
 
-## Overview (OLD)
-This year’s challenge focuses on **Training set optimization for object detection**, where the source and target domains have completely different classes (pedestrian IDs). The particular task is to retrieve the pedestrian instances of the same ID as the query image. This problem is significantly different from previous VisDA challenges, where the source and target domains share some overlapping classes. Moreover, ID matching depends on fine-grained details, making the problem harder than before.
+## Overview 
+This year’s challenge focuses on **Training set optimization for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on person and vehicle detection. 
 
-The competition will take place during May -- July 2020, and the top-performing teams will be invited to present their results at the workshop at [ECCV 2020](https://sites.google.com/view/task-cv2020) in September, Glasgow.
+The competition will take place during Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
 
 ## Challenge Data 
 
-[[GoogleDrive]](https://drive.google.com/open?id=18qIbI1XiG2n36qCTS-Te-2XATxiHNVDj) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
+Source pool: [[GoogleDrive]](https://drive.google.com/file/d/1n5k9V0YOO6DWuMgO5xm5TBc2DRLAXdEq/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
 
-![enter image description here](https://github.com/sxzrt/The-PersonX-dataset/raw/master/images/logo1.jpg)
+Target: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
 
 
+![fig1](https://github.com/yorkeyao/datacv24/blob/main/images/write.jpg)  
+<!-- ![enter image description here](https://github.com/sxzrt/The-PersonX-dataset/raw/master/images/logo1.jpg) -->
 
-The Region100 benchmark consists of footage captured by 100 static cameras from various regions in the real world.
+
+The target dataset: Region100 benchmark consists of footage captured by 100 static cameras from various regions in the real world.
 For videos from each different region, the first 70% is used for model training, while the remaining 30% is designated for validation and testing.
 
 The target domain consists of real-world images from 100 regions in the world. In total, there are 21871 images. We have provided region camera index information for both source and target training sets. 
@@ -35,11 +33,12 @@ The target domain consists of real-world images from 100 regions in the world. I
  - For the test A set, it contains 2,134 images.
  - For the test B set, it contains 4,368 images.
 
+The source pool  
 
 The challenge dataset split is organized as follows: 
 ```
 ├── Region100/
-(Source dataset collected from synthetic simulator)
+(Source pool from existing benchmarks)
 │   ├── source_pool/              /* source training images
 │       ├── voc_train/                    
 │           ├── VOC2007/
@@ -94,11 +93,10 @@ The challenge dataset split is organized as follows:
 |           ...
 ```
 
-By downloading these datasets you agree to the following terms:
-
 ### Naming Rule of the images
 The first three digits correspond to the region code, and the following six digits correspond to the image number within the region. For example, 001_000001.jpg is the first image captured from the first region camera. "001" is the region code, and "000001" is the image number.
 
+By downloading these datasets you agree to the following terms:
 
 ### Terms of Use
 - The data is to be utilized solely for research and educational purposes that do not seek profit. 
@@ -106,77 +104,17 @@ The first three digits correspond to the region code, and the following six digi
 - The providers of the data disclaim all guarantees, including but not limited to those concerning the violation of rights or the data's suitability for a specific use. 
 - Users assume all responsibility for their application of the data. 
 
-The datasets are accessible for download via the following links: [GoogleDrive](https://drive.google.com/open?id=18qIbI1XiG2n36qCTS-Te-2XATxiHNVDj) and [OneDrive](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC).
-
-### Download the Test Set
-- The test set is available [here](https://drive.google.com/file/d/12oWSOK1oQVhTNqoVUli70dboXOxPxG41/view?usp=sharing). You need to fill in the [google form](https://forms.gle/9hjryZ5WDUUEZTAX9) to get the password for unzipping files. If you can not open the form, please fill in the [form offline](https://github.com/Simon4Yan/VisDA2020/tree/master/form/) and send it to (weijian.deng@anu.edu.au).
-
-- We respectfully notice that all participating teams should fill in the form above. If you haven't finished, please fill it online or offline. Thanks!
-
-- Please kindly follow the [RULES](http://ai.bu.edu/visda-2020/#rules) and read the [FAQ](http://ai.bu.edu/visda-2020/#faq), thanks!
-
-
-## Evaluating Your Model
-We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants.
-We will use CodaLab to evaluate submissions and maintain a leaderboard. To register for the evaluation server, please create an account on CodaLab and enter as a participant in the following competition:
-
-[Domain Adaptive Pedestrian Re-identification](https://competitions.codalab.org/competitions/24664)
-
-If you are working as a team, you have the option to register for one account for your team or register multiple accounts under the same team name. If you choose to use one account, please indicate the names of all of the members on your team. This can be modified in the “User Settings” tab. If your team registers for multiple accounts, please do so using the protocol explained by CodaLab here. Regardless of whether you register for one or multiple accounts, your team must adhere to the per-team submission limits (20 entries per day per team during the validation phase). 
-
-The evaluation metrics used to rank the performance of each team will be mean Average Precision (mAP) and Cumulated Matching Characteristics (CMC) curve. **The metrics evaluate the top-100 matches**. 
-
-### Submission Format
-Each line of the submitted file contains a list of the top 100 matches from the gallery set for each query, in ascending order of their distance to the query. The delimiter is space. Each match should be represented as the **index** of the gallery image (from 00000 to 24005 for the test set). 
-
-More specifically, the first line of submission file is corresponding to the top 100 matches (represented as indices) of the first query (index=0000); the second line is corresponding to the second query (idex=0001).
-
-- The index of each image in the validation set can be found in [submit-test](https://github.com/Simon4Yan/VisDA2020/tree/master/submit_test).
-- Please see a sample submission file [submission-example]( https://github.com/Simon4Yan/VisDA2020/tree/master/submit_test).
-
-### Submitting to the Evaluation Server
-[Domain Adaptive Pedestrian Re-identification](https://competitions.codalab.org/competitions/24664)
-
-Once the servers become available, you will be able to submit your results:
-
-- Generate "result.txt".
-- Place the result file into a zip file named [team_name]_submission.
-  In this step, please directly zip the result file and get "result.zip". You can choose to 
-  rename the zip to [team_name]_submission or just submit the "result.zip" for convenience.
-- Submit to the CodaLab evaluation server following the instructions below
-
-To submit your zipped result file to the appropriate VisDA challenge click on the “Participate” tab. Select the phase (validation or testing). Select Submit / View Results, fill in the required fields and click “Submit”. A pop-up will prompt you to select the results zip file for upload. After the file is uploaded, the evaluation server will begin processing. This might take some time. To view the status of your submission please select “Refresh Status”. If the status of your submission is “Failed” please check your file is named correctly and has the right format. You may refer to the scoring output and error logs for more details.
-
-After you submit your results to the evaluation server, you can control whether your results are publicly posted to the CodaLab leaderboard. To toggle the public visibility of your results please select either “post to leaderboard” or “remove from leaderboard.”
-
-## Devkit
-We provide a simple baseline code ([based on codes [3]](https://github.com/Simon4Yan/feature_learning)). In the devkit, we provide code for reading the challenge datasets and evaluation code.
-
-- The mAP evaluation code in this github evaluates all matches.  And the server evaluates mAP based on top-100 matches (this is commonly used in the community, such as [Aitychallenge](https://www.aicitychallenge.org/2020-data-and-evaluation/)).
-Thus, the CMC ranks are identical, while the mAP in the server is higher.  Consider the generality, I provide the code here to evaluate all matches. You could modify the evaluation code to evaluate the top-100 matches, if you want to calculate the same number of mAP with the codalab.
-
-```bash
-python learn/train.py
-python learn/test.py
-```
-
-The baseline performance is, 
-|Methods | Rank@1 | mAP| Reference|
-| -------- | ----- | ---- | ---- |
-| Source Only |26.53 | 14.19 |  [ResNet-50] |
-| SPGAN |41.11 | 21.35  |  [ResNet-50] |
-
-## Broader Impact
-
-This competition is featured by learning from synthetic 3D person data. We are not only advancing state-of-the-art technologies in domain adaptation, metric learning and deep neural networks, but importantly aim to reduce system reliance on real-world datasets. While we evaluate our algorithms on real-world data, we have adopted strict measures to take care of the privacy issue. For example, all the faces have been blurred. The participants have signed to comply with our data protection agreement, where we have forbidden the posting or distribution of test images in papers or other public domains. We believe these measures will significantly improve data safety and privacy, while allowing researchers to develop useful technologies.
-
 ## Feedback and Help
-If you find any bugs please [open an issue](https://github.com/Simon4Yan/VisDA2020/issues/new).
+If you find any bugs please [open an issue](https://github.com/yorkeyao/datacv2024/issues/new).
 
 ## References
 
-[1] Sun, Xiaoxiao, and Liang Zheng. "Dissecting person re-identification from the viewpoint of viewpoint." _Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition_. 2019.
-
-[2] W. Deng, L. Zheng, Q. Ye, G. Kang, Y. Yang, and J. Jiao. Image-image domain adaptation with preserved self-similarity and domain-dissimilarity for person re-identification. In CVPR, 2018
-
-[3] Lv, Kai, Weijian Deng, Yunzhong Hou, Heming Du, Hao Sheng, Jianbin Jiao, and Liang Zheng. "Vehicle reidentification with the location and time stamp." In _Proc. CVPR Workshops_. 2019.
+```
+@inproceedings{yao2023large,
+  title={Large-scale Training Data Search for Object Re-identification},
+  author={Yao, Yue and Lei, Huan and Gedeon, Tom and Zheng, Liang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15568--15578},
+  year={2023}
+}
+```
