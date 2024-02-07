@@ -16,9 +16,9 @@ The competition will take place during Feb -- Apr 2024, and the top-performing t
 
 ## Challenge Data 
 
-Source pool: [[GoogleDrive]](https://drive.google.com/file/d/1n5k9V0YOO6DWuMgO5xm5TBc2DRLAXdEq/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
+<!-- Source pool: [[GoogleDrive]](https://drive.google.com/file/d/1n5k9V0YOO6DWuMgO5xm5TBc2DRLAXdEq/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
 
-Target: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
+Target: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC) -->
 
 
 ![fig1](https://github.com/yorkeyao/DataCV2024/blob/main/images/write.jpg)  
