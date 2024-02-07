@@ -21,7 +21,7 @@ Source pool: [[GoogleDrive]](https://drive.google.com/file/d/1n5k9V0YOO6DWuMgO5x
 Target: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
 
 
-![fig1](https://github.com/yorkeyao/datacv24/blob/main/images/write.jpg)  
+![fig1](https://github.com/yorkeyao/DataCV2024/tree/main/images/write.jpg)  
 <!-- ![enter image description here](https://github.com/sxzrt/The-PersonX-dataset/raw/master/images/logo1.jpg) -->
 
 
