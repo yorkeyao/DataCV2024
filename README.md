@@ -2,7 +2,7 @@
 
 Welcome to DataCV2024!
 
-This is the development kit repository for [the 2nd CVPR DataCV Challenge](https://sites.google.com/view/vdu-cvpr24/competition/). Here you can find details on how to download datasets, run baseline models, and evaluate the performance of your model. Evaluation can be performed remotely on the CodeLab evaluation server. Please also refer to the main website for competition details, rules, and dates.
+This is the development kit repository for [the 2nd CVPR DataCV Challenge](https://sites.google.com/view/vdu-cvpr24/competition/). Here you can find details on how to download datasets, run baseline models (TODO), and evaluate the performance of your model (TODO). Evaluation can be performed remotely on the CodeLab evaluation server. Please also refer to the main website for competition details, rules, and dates.
 
 Have fun!
 
@@ -10,7 +10,7 @@ Have fun!
 --------------------------------------------------------------------
 
 ## Overview 
-This year’s challenge focuses on **Training set optimization for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on person and vehicle detection. We newly introudce Regin100 as our target and reuse existing 6 well-known benchmark as source pool. 
+This year’s challenge focuses on **Training set search for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on person and vehicle detection. We newly introudce Regin100 as our target and reuse existing 6 well-known benchmark as source pool. 
 
 The competition will take place during Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
 
@@ -69,7 +69,7 @@ The challenge dataset split is organized as follows:
 │       ├── cityscapes_annotation.json
 │       ├── bdd_annotation.json
 │       ├── ade_annotation.json 
-(Target dataset collected from real world)
+(Target region100 dataset collected from real world)
 │   ├── train/                    /* training set
 │       ├── 001/
 |           ├── 001_000001.jpg
@@ -79,13 +79,13 @@ The challenge dataset split is organized as follows:
 |           ├── 002_000001.jpg
 |           ├── 002_000002.jpg
 |           ...
-│   ├── testA/                    /* validation set
+│   ├── testA/                    /* test A set
 │       ├── 001_000001.jpg
 │       ├── 001_000002.jpg
 │       ├── 001_000003.jpg
 │       ├── 001_000004.jpg
 |           ...
-│   ├── testB/                     /* test set
+│   ├── testB/                     /* test B set (not released yet)
 │       ├── 001_000001.jpg
 │       ├── 001_000002.jpg
 │       ├── 001_000003.jpg
@@ -105,6 +105,8 @@ By downloading these datasets you agree to the following terms:
 - Users assume all responsibility for their application of the data. 
 
 ### Detection Model
+
+Unlike traditional challenges where the training set is fixed, allowing participants to optimize their model or algorithm, in our 'training set search' challenge, we keep the model or algorithm fixed and allow participants to optimize the training set. We fix our task model as RetinaNet, which is available on [mmdetection](https://github.com/open-mmlab/mmdetection/tree/main/configs/retinanet). 
 
 ## Feedback and Help
 If you find any bugs please [open an issue](https://github.com/yorkeyao/datacv2024/issues/new).
