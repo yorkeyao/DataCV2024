@@ -10,15 +10,15 @@ Have fun!
 --------------------------------------------------------------------
 
 ## Overview 
-This year’s challenge focuses on **Training set search for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on vehicle detection. We newly introudce Regin100 as our target and reuse existing 7 well-known benchmarks as source pool. 
+This year’s challenge focuses on **Training set search for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on vehicle detection. We newly introudce Regin100 as our target and reuse existing 6 well-known benchmarks as source pool. 
 
 The competition will take place during Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
 
 ## Challenge Data 
 
-<!-- Source pool: [[GoogleDrive]](https://drive.google.com/file/d/1n5k9V0YOO6DWuMgO5xm5TBc2DRLAXdEq/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC)
+Source pool: [[GoogleDrive]](https://drive.google.com/file/d/10kRIfJSxOdF84WMh9AR63YJDk07LPszo/view?usp=drive_link) and [[BaiduYun]](https://pan.baidu.com/s/1NeLvKAhrHgXn_Zul2VEfHw) (pwd: jp2x)
 
-Target: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC) -->
+Target: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://pan.baidu.com/s/1XZypSQsiVjjWfH9FFKerjw?pwd=yqt5) (pwd: yqt5) 
 
 
 ![fig1](https://github.com/yorkeyao/DataCV2024/blob/main/images/write.jpg)  
