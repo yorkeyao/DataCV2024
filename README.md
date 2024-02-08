@@ -10,7 +10,7 @@ Have fun!
 --------------------------------------------------------------------
 
 ## Overview 
-This year’s challenge focuses on **Training set search for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on person and vehicle detection. We newly introudce Regin100 as our target and reuse existing 6 well-known benchmarks as source pool. 
+This year’s challenge focuses on **Training set search for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on vehicle detection. We newly introudce Regin100 as our target and reuse existing 7 well-known benchmarks as source pool. 
 
 The competition will take place during Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
 
