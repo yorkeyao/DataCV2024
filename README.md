@@ -33,7 +33,7 @@ The target domain consists of real-world images from 100 regions in the world. I
  - For the test A set, it contains 2,134 images.
  - For the test B set, it contains 4,368 images. The test B set will be researved for final ranking. 
 
-The source pool comprises datasets from six existing sources: ADE, BDD, Cityscapes, COCO, VOC, and KITTI. We have standardized the labeling format to match that of COCO, and filtered out labels that are not related to persons or vehicles. In total, the collection contains 161,789 images. 
+The source pool comprises datasets from six existing sources: ADE, BDD, Cityscapes, COCO, VOC, and KITTI. We have standardized the labeling format to match that of COCO, and filtered out labels that are not related to vehicles. In total, the collection contains 161,789 images. 
 
 The challenge dataset split is organized as follows: 
 ```
