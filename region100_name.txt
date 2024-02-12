@@ -1,0 +1,100 @@
+001: Bosnia
+002: Czech
+003: Greece
+004: Laos
+005: Ireland
+006: Japan
+007: Brazil
+008: Korea
+009: Uzbekistan
+010: Germany
+011: Croatia
+012: Guyana
+013: Philippines
+014: United States
+015: Serbia
+016: Romania
+017: Mexico
+018: Thailand
+019: Finland
+020: Vietnam
+021: Taiwan
+022: Israel
+023: Egypt
+024: South Africa
+025: Namibia
+026: Australia
+027: Sri Lanka
+028: Qatar
+029: Oman
+030: Myanmar
+031: Maldives
+032: Kyrgyzstan
+033: Candelaria
+034: Bhutan
+035: Kosovo
+036: Liechtenstein
+037: Kazakhstan
+038: Jersey
+039: Switzerland
+040: Saint Barthelemy
+041: Spain
+042: Netherlands
+043: Turkey
+044: Iraq
+045: Russia
+046: Vatican
+047: Latvia
+048: Armenia
+049: Indonesia
+050: Sweden
+051: Beijing
+052: Iceland
+053: United Kingdom
+054: Singapore
+055: Estonia
+056: Norway
+057: Nepal
+058: Guatemala
+059: Prague
+060: Albania
+061: Peru
+062: India
+063: Denmark
+064: Dominican Republic
+065: Tanzania
+066: Belgium
+067: Canada
+068: Malaysia
+069: Seychelles
+070: Ukraine
+071: Fiji
+072: New Zealand
+073: Slovenia
+074: Madagascar
+075: San Marino
+076: Argentina
+077: Paraguay
+078: Poland
+079: Virgin Islands
+080: Austria
+081: Macau
+082: French Polynesia
+083: France
+084: Uruguay
+085: Jamaica
+086: Belarus
+087: Italy
+088: Malta
+089: Moldova
+090: Bulgaria
+091: Pakistan
+092: Lithuania
+093: Cyprus
+094: Honduras
+095: Chile
+096: Slovakia
+097: Puerto Rico
+098: New Caledonia
+099: Hong Kong
+100: Mauritius
