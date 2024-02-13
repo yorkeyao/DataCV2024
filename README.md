@@ -2,7 +2,7 @@
 
 Welcome to DataCV2024!
 
-This is the development kit repository for [the 2nd CVPR DataCV Challenge](https://sites.google.com/view/vdu-cvpr24/competition/). Here you can find details on how to download datasets, run baseline models (TODO), and evaluate the performance of your model (TODO). Evaluation can be performed remotely on the CodeLab evaluation server. Please also refer to the main website for competition details, rules, and dates.
+This is the development kit repository for [the 2nd CVPR DataCV Challenge](https://sites.google.com/view/vdu-cvpr24/competition/). Here you can find details on how to download datasets, run baseline models, and evaluate the performance of your model. Evaluation can be performed remotely on the [CodeLab](https://codalab.lisn.upsaclay.fr/competitions/17688) evaluation server. Please also refer to the main website for competition details, rules, and dates.
 
 Have fun!
 
