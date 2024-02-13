@@ -29,11 +29,11 @@ The target dataset: Region100 benchmark consists of footage captured by 100 stat
 For videos from each different region, the first 70% is used for model training, while the remaining 30% is designated for validation and testing.
 
 The target domain consists of real-world images from 100 regions in the world. In total, there are 21871 images. We have provided region camera index information for both source and target training sets. 
- - For the training set, it contains 15,369 images.
+ - For the training set, it contains 15,368 images.
  - For the test A set, it contains 2,134 images.
  - For the test B set, it contains 4,368 images. The test B set will be researved for final ranking. 
 
-The source pool comprises datasets from six existing sources: ADE, BDD, Cityscapes, COCO, VOC, and KITTI. We have standardized the labeling format to match that of COCO, and filtered out labels that are not related to vehicles. In total, the collection contains 161,789 images. 
+The source pool comprises datasets from six existing sources: ADE, BDD, Cityscapes, COCO, VOC, Detrac, and KITTI. We have standardized the labeling format to match that of COCO, and filtered out labels that are not related to vehicles. In total, the collection contains 176,491 images. 
 
 The challenge dataset split is organized as follows: 
 ```
@@ -63,6 +63,7 @@ The challenge dataset split is organized as follows:
 │           ├── ADE_train_00000001.jpg
 |           ├── ADE_train_00000002.jpg
 |           ...
+|       ├── detrac_train/  
 │       ├── voc_annotation.json
 │       ├── kitti_annotation.json
 │       ├── coco_annotation.json
@@ -93,6 +94,8 @@ The challenge dataset split is organized as follows:
 |           ...
 ```
 
+The aim of this challenge is to find no more than 8000 images from source pool to train a competent model for our region100 target. [A baseline algorithm](https://github.com/yorkeyao/DataCV2024/tree/main/SnP_detection) for training set search has been provided. 
+
 ### Naming Rule of the Images
 The first three digits correspond to the region code, and the following six digits correspond to the image number within the region. For example, 001_000001.jpg is the first image captured from the first region camera. "001" is the region code, and "000001" is the image counting number.
 
@@ -106,7 +109,7 @@ By downloading these datasets you agree to the following terms:
 
 ### Detection Model
 
-Unlike traditional challenges where the training set is fixed, allowing participants to optimize their model or algorithm, in our 'training set search' challenge, we keep the model or algorithm fixed and allow participants to optimize the training set. We fix our task model as RetinaNet, which is available on [mmdetection](https://github.com/open-mmlab/mmdetection/tree/main/configs/retinanet). 
+Unlike traditional challenges where the training set is fixed, allowing participants to optimize their model or algorithm, in our 'training set search' challenge, we keep the model or algorithm fixed and allow participants to optimize the training set. We fix our task model as RetinaNet, which is available on [this link](https://github.com/yorkeyao/DataCV2024/tree/main/task_model). 
 
 ## Feedback and Help
 If you find any bugs please [open an issue](https://github.com/yorkeyao/datacv2024/issues/new).

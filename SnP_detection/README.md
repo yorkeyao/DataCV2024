@@ -13,7 +13,7 @@ Please refer to [requirment](https://github.com/yorkeyao/DataCV2024/tree/main/ta
 
 ## Datasets Preparation
 
-Please refer to dataset download page for datasets. After all data is ready, please modify the paths for dataset in 'trainingset_search_detection_vehicle.py'
+Please refer to [dataset download page](https://github.com/yorkeyao/DataCV2024/tree/main) for datasets. After all data is ready, please modify the paths for dataset in 'trainingset_search_detection_vehicle.py'
 
 ## Running example 
 
