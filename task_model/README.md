@@ -2,6 +2,7 @@
 
 Our task model s based on [mmdetection](https://github.com/open-mmlab/mmdetection). 
 
+To manage the python code, it is recommended to install [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html).
 
 For creating environment,
 
