@@ -29,7 +29,6 @@ The install of mmdetction.
 
 ```python
 cd mmdetection/
-pip install -r requirements/build.txt
 pip install -v -e . 
 ```
 
@@ -48,7 +47,7 @@ bash tools/dist_train.sh configs_tss/retinanet/retinanet_r50_fpn_1x_custom_tss_c
 or training with single GPU
 
 ```python
-python tools/train.py configs_tss/retinanet/retinanet_r50_fpn_1x_custom_tss_car_person.py 
+python tools/train.py configs_tss/retinanet/retinanet_r50_fpn_1x_custom_tss_car.py 
 ```
 
 This will create checkpoint in './work_dirs'. You may create a coco formate submission using 
