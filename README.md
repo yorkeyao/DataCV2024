@@ -107,6 +107,49 @@ By downloading these datasets you agree to the following terms:
 - The providers of the data disclaim all guarantees, including but not limited to those concerning the violation of rights or the data's suitability for a specific use. 
 - Users assume all responsibility for their application of the data. 
 
+# Running Environment for Baseline
+
+To manage the python code, it is recommended to install [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html).
+
+For creating environment,
+
+```python
+conda create -n tss python=3.7 -y
+conda activate tss
+```
+
+Besides, you will need to install pytorch 1.12, please modify cuda version according to the version installed in the system. 
+
+```python
+pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
+```
+
+The install of mmcv library. 
+
+```python
+pip install -U openmim
+mim install mmcv-full==1.7.0
+pip install yapf==0.40.1
+```
+
+The install of mmdetction.
+
+```python
+cd mmdetection/
+pip install -v -e . 
+```
+
+Additionally
+
+```python
+pip install scikit-learn
+pip install scipy==1.2.1
+```
+
+### Baseline search algorithm 
+
+We implement the [SnP framework](https://github.com/yorkeyao/SnP) proposed by Yao etal. We have adapted the SnP framwork to the detection task, the [this repo](https://github.com/yorkeyao/DataCV2024/tree/main/SnP_detection) will create a searched training set with 8,000 images.   
+
 ### Detection Model
 
 Unlike traditional challenges where the training set is fixed, allowing participants to optimize their model or algorithm, in our 'training set search' challenge, we keep the model or algorithm fixed and allow participants to optimize the training set. We fix our task model as RetinaNet, which is available on [this link](https://github.com/yorkeyao/DataCV2024/tree/main/task_model). 

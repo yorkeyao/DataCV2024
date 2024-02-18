@@ -4,12 +4,12 @@
 The code is based on Yue's SnP framework for training set search, the paper 'Large-scale Training Data Search for Object Re-identification' in CVPR2023.
 
 
-## Requirements
+<!-- ## Requirements
 
 Please refer to [requirment](https://github.com/yorkeyao/DataCV2024/tree/main/task_model) of the task model. Addtionally, we need:
 
 - Sklearn
-- Scipy 1.2.1
+- Scipy 1.2.1 -->
 
 ## Datasets Preparation
 
