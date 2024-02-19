@@ -4,7 +4,7 @@ Our task model is based on [mmdetection](https://github.com/open-mmlab/mmdetecti
 
 # Modificantion of Data Path
 
-You will need to modify the link to dataset, please modify the data path in 'task_model/configs_tss/_base_/datasets/custom_tss.py'. Please note the annotation file for testA only contains images.  
+You will need to modify the link to dataset, please modify the data path in 'task_model/configs_tss/_base_/datasets/custom_tss.py'. Please note the annotation file for testA is attached in this repo and only contains images.  
 
 # Training and testing
 
