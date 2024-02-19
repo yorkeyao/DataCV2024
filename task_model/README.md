@@ -1,26 +1,26 @@
 # Overview
 
-Our task model s based on [mmdetection](https://github.com/open-mmlab/mmdetection). 
+Our task model is based on [mmdetection](https://github.com/open-mmlab/mmdetection). 
 
 # Modificantion of Data Path
 
-You will need to modify the link to dataset, please mofity the data path in 'task_model/configs_tss/_base_/datasets/custom_tss.py'.  
+You will need to modify the link to dataset, please modify the data path in 'task_model/configs_tss/_base_/datasets/custom_tss.py'. Please note the annotation file for testA only contains images.  
 
 # Training and testing
 
-You may perform training with muliple GPUs. The following command is used to perform training on 8 GPUs. 
+You may perform training with multiple GPUs. The following command is used to perform training on 8 GPUs. 
 
 ```python
 bash tools/dist_train.sh configs_tss/retinanet/retinanet_r50_fpn_1x_custom_tss_car.py 8
 ```
 
-or training with single GPU
+or training with a single GPU
 
 ```python
 python tools/train.py configs_tss/retinanet/retinanet_r50_fpn_1x_custom_tss_car.py 
 ```
 
-This will create checkpoint in './work_dirs'. You may create a coco formate submission using 
+This will create a checkpoint in './work_dirs'. You may create a coco formate submission using 
 
 ```python
 python tools/test.py \
