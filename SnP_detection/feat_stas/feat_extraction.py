@@ -75,9 +75,9 @@ def get_activations(opt, files, model, batch_size=50, dims=8192,
     n_used_imgs = n_batches * batch_size
 
     pred_arr = np.empty((n_used_imgs+n_remainder, dims))
-    if n_remainder!=0:
-        n_batches=n_batches+1
-    for i in tqdm(range(n_batches)):
+    # if n_remainder!=0:
+    #     n_batches=n_batches+1
+    for i in tqdm(range(n_batches - 1)):
         if verbose:
             print('\rPropagating batch %d/%d' % (i + 1, n_batches),
                   end='', flush=True)
@@ -88,8 +88,12 @@ def get_activations(opt, files, model, batch_size=50, dims=8192,
           end = start + batch_size
 
         # print (files[start:end])
-        images = np.array([resize( imread(str(f)).astype(np.float32), (64, 64, 3) ).astype(np.float32)
-                           for f in files[start:end]])
+        if files[0].endswith('jpg'):
+            images = np.array([resize( imread(str(f), format='jpg').astype(np.float32), (224, 224, 3) ).astype(np.float32)
+                            for f in files[start:end]])
+        else:
+            images = np.array([resize( imread(str(f)).astype(np.float32), (224, 224, 3) ).astype(np.float32)
+                            for f in files[start:end]])
 
         images = images.transpose((0, 3, 1, 2))
         images /= 255
