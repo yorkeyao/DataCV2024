@@ -20,7 +20,7 @@ parser.add_argument('--target', type=str, default='exdark', choices=['region100'
 parser.add_argument('--FD_model', type=str, default='inception', choices=['inception', 'posenet'],
                     help='model to calculate FD distance')
 parser.add_argument('--output_data', type=str, metavar='PATH', default='/data/detection_data/searched.json')
-parser.add_argument('--seed', default=0, type=int, help='number of cluster')
+parser.add_argument('--seed', default=0, type=int, help='random seed')
 
 opt = parser.parse_args()
 logs_dir=opt.logs_dir
