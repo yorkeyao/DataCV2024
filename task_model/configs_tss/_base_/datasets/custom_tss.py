@@ -28,23 +28,25 @@ test_pipeline = [
             dict(type='Collect', keys=['img']),
         ])
 ]
+
+# To be modified when this code is applied on other environment
 data = dict(
     samples_per_gpu=2,
     workers_per_gpu=2,
     train=dict(
         type=dataset_type,
-        ann_file='/yaoy/detection_code/kitti_annotation.json',
-        img_prefix='/yaoy/detection_code/kitti_train/',
+        ann_file='/yaoy/kevin/random_sample_region100_vehicle_8000.json',
+        img_prefix='',
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
-        ann_file='/yaoy/detection_code/kitti_annotation.json',
-        img_prefix='/yaoy/detection_code/kitti_train/',
+        ann_file='/yaoy/kevin/random_sample_region100_vehicle_8000.json',
+        img_prefix='',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file='/yaoy/detection_code/kitti_annotation.json',
-        img_prefix='/yaoy/detection_code/kitti_train/',
+        ann_file='/yaoy/detection_code_release/testA_image_list.json',
+        img_prefix='/yaoy/kevin/region_100/testA/',
         pipeline=test_pipeline))
         
         

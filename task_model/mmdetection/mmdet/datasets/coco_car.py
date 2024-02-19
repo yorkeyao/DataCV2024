@@ -55,7 +55,8 @@ class CocoCarDataset(CustomDataset):
 
         self.total_ann_ids = len(set(total_ann_ids))
         self.total_imgs = len(self.img_ids)
-        self.avg_area = sum_area / self.total_ann_ids
+        if len(set(total_ann_ids)) != 0:
+            self.avg_area = sum_area / self.total_ann_ids
         self.avg_obj = self.total_ann_ids / self.total_imgs
 
         print("len(set(total_ann_ids)) = ", len(set(total_ann_ids)))
