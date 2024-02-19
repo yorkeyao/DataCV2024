@@ -2,6 +2,8 @@ import os
 import feat_stas.SnP_detection
 import argparse
 import numpy as np
+import torch
+import random
 from scipy.special import softmax
 
 parser = argparse.ArgumentParser(description='outputs')
@@ -18,10 +20,15 @@ parser.add_argument('--target', type=str, default='exdark', choices=['region100'
 parser.add_argument('--FD_model', type=str, default='inception', choices=['inception', 'posenet'],
                     help='model to calculate FD distance')
 parser.add_argument('--output_data', type=str, metavar='PATH', default='/data/detection_data/searched.json')
+parser.add_argument('--seed', default=0, type=int, help='number of cluster')
 
 opt = parser.parse_args()
 logs_dir=opt.logs_dir
 result_dir=opt.result_dir
+
+np.random.seed(opt.seed)
+torch.manual_seed(opt.seed)
+random.seed(opt.seed) 
 
 data_dict = {
         'ade': '/data2/source_pool/ade_train/',
@@ -54,7 +61,7 @@ result_dir=opt.result_dir
 c_num = opt.c_num
 
 if not os.path.isdir(result_dir):
-    os.mkdirs(result_dir)
+    os.makedirs(result_dir)
 
 if os.path.isdir(opt.output_data):
     assert ("output dir has already exist")
