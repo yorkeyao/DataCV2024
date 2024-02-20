@@ -6,7 +6,7 @@ The code is based on Yue's SnP framework for training set search, the paper 'Lar
 
 <!-- ## Requirements
 
-Please refer to [requirment](https://github.com/yorkeyao/DataCV2024/tree/main/task_model) of the task model. Addtionally, we need:
+Please refer to [requirment](https://github.com/yorkeyao/DataCV2024/tree/main/task_model) of the task model. Additionally, we need:
 
 - Sklearn
 - Scipy 1.2.1 -->
@@ -17,7 +17,7 @@ Please refer to [dataset download page](https://github.com/yorkeyao/DataCV2024/t
 
 ## Running example 
 
-For running such process, when Market is used as target, we can seach a training set with 8000 images using the command below:
+For running such a process, when region100 is used as the target, we can search a training set with 8000 images using the command below:
 
 ```python
 python trainingset_search_detection_vehicle.py --target 'region100' \
@@ -42,4 +42,4 @@ If you find this code useful, please kindly cite:
 }
 ```
 
-If you have any question, feel free to contact yue.yao@anu.edu.au
+If you have any questions, feel free to contact yue.yao@anu.edu.au
