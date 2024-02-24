@@ -26,6 +26,17 @@ python trainingset_search_detection_vehicle.py --target 'region100' \
 --n_num 8000 \
 --output_data '/data/detection_data/trainingset_search/SnP_region100_vehicle_8000_random_c_num50.json'  
 ```
+
+For random sample
+
+```python
+python trainingset_search_detection_vehicle.py --target 'region100' \
+--select_method 'random' --c_num 50 \
+--result_dir 'main_results/sample_data_detection_vehicle_region100/' \
+--n_num 8000 \
+--output_data '/data/detection_data/trainingset_search/random_sample_region100_vehicle_8000.json'  
+```
+
 Please modify the output json file to a suitable place. After a training set is searched. Please use the [task model](https://github.com/yorkeyao/DataCV2024/tree/main/task_model) to get a prediction for evaluation.  
 
 
