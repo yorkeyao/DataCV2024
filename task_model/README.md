@@ -29,5 +29,5 @@ python tools/test.py \
     --format-only --options "jsonfile_prefix=./"
 ```
 
-Please have it renamed to 'answer.txt' and zip it for evaluation server. 
+It will output ".bbox.json" at "./", this is the output we need. Please have it renamed to 'answer.txt' and zip it for the evaluation server. 
 
