@@ -10,9 +10,9 @@ Have fun!
 --------------------------------------------------------------------
 
 ## Overview 
-This year’s challenge focuses on **Training set search for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focuses on vehicle detection. We newly introudce Regin100 as our target and reuse existing 6 well-known benchmarks as source pool. 
+This year’s challenge focuses on **Training set search for object detection**. We consider a scenario where we have access to the target domain, but cannot afford on-the-fly training data annotation, and instead would like to construct an alternative training set from a large-scale data pool such that a competitive model can be obtained. Specifically, we focus on vehicle detection. We newly introduce Regin100 as our target and reuse the existing 7 well-known datasets as a source pool. 
 
-The competition will take place during Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
+The competition will take place from Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
 
 ## Challenge Data 
 
@@ -33,9 +33,9 @@ For videos from each different region, the first 70% is used for model training,
 The target domain consists of real-world images from 100 regions in the world. In total, there are 21871 images. We have provided region camera index information for both source and target training sets. 
  - For the training set, it contains 15,368 images.
  - For the test A set, it contains 2,134 images.
- - For the test B set, it contains 4,368 images. The test B set will be researved for final ranking. 
+ - For the test B set, it contains 4,368 images. The test B set will be reserved for the final ranking. 
 
-The source pool comprises datasets from six existing sources: ADE, BDD, Cityscapes, COCO, VOC, Detrac, and KITTI. We have standardized the labeling format to match that of COCO, and filtered out labels that are not related to vehicles. In total, the collection contains 176,491 images. 
+The source pool comprises datasets from seven existing sources: ADE, BDD, Cityscapes, COCO, VOC, Detrac, and KITTI. We have standardized the labeling format to match that of COCO, and filtered out labels that are not related to vehicles. In total, the collection contains 176,491 images. 
 
 The challenge dataset split is organized as follows: 
 ```
