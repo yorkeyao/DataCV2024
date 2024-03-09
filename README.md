@@ -18,7 +18,9 @@ The competition will take place during Feb -- Apr 2024, and the top-performing t
 
 Source pool: [[GoogleDrive]](https://drive.google.com/file/d/10kRIfJSxOdF84WMh9AR63YJDk07LPszo/view?usp=drive_link) and [[BaiduYun]](https://pan.baidu.com/s/1NeLvKAhrHgXn_Zul2VEfHw) (pwd: jp2x)
 
-Target: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://pan.baidu.com/s/1iMtCTC0ErJP7r7x7_8lbKQ?pwd=4ls8) (pwd: 4ls8) 
+Region100 training and testA: [[GoogleDrive]](https://drive.google.com/file/d/1u9AfVxQpFTJkzm50Wfvr6LJhP9b2Dq1J/view?usp=sharing) and [[BaiduYun]](https://pan.baidu.com/s/1iMtCTC0ErJP7r7x7_8lbKQ?pwd=4ls8) (pwd: 4ls8) 
+
+TestB [[GoogleDrive]](https://drive.google.com/file/d/1Ldru02ZmPGu_jJHfGtFYH16EikybHEEj/view?usp=sharing) and [[BaiduYun]](https://pan.baidu.com/s/1-jbSzscJaru4ssY32XvcOw?pwd=n5jv) (pwd: n5jv)   
 
 
 ![fig1](https://github.com/yorkeyao/DataCV2024/blob/main/images/write.jpg)  
