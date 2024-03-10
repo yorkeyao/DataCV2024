@@ -88,7 +88,7 @@ The challenge dataset split is organized as follows:
 │       ├── 001_000003.jpg
 │       ├── 001_000004.jpg
 |           ...
-│   ├── testB/                     /* test B set (not released yet)
+│   ├── testB/                     /* test B set 
 │       ├── 001_000001.jpg
 │       ├── 001_000002.jpg
 │       ├── 001_000003.jpg
@@ -96,7 +96,7 @@ The challenge dataset split is organized as follows:
 |           ...
 ```
 
-The aim of this challenge is to find no more than 8000 images from source pool to train a competent model for our region100 target. [A baseline algorithm](https://github.com/yorkeyao/DataCV2024/tree/main/SnP_detection) for training set search has been provided. 
+The aim of this challenge is to find no more than 8000 images from the source pool to train a competent model for our region100 target. [A baseline algorithm](https://github.com/yorkeyao/DataCV2024/tree/main/SnP_detection) for training set search has been provided. 
 
 ### Naming Rule of the Images
 The first three digits correspond to the region code, and the following six digits correspond to the image number within the region. For example, 001_000001.jpg is the first image captured from the first region camera. "001" is the region code, and "000001" is the image counting number.
@@ -111,9 +111,9 @@ By downloading these datasets you agree to the following terms:
 
 # Running Environment for Baseline
 
-To manage the python code, it is recommended to install [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html).
+To manage the Python code, it is recommended to install [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html).
 
-For creating environment,
+For creating an environment,
 
 ```python
 conda create -n tss python=3.7 -y
@@ -126,7 +126,7 @@ Besides, you will need to install pytorch 1.12, please modify cuda version accor
 pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 
-The install of mmcv library. 
+The installation of mmcv library. 
 
 ```python
 pip install -U openmim
@@ -134,7 +134,7 @@ mim install mmcv-full==1.7.0
 pip install yapf==0.40.1
 ```
 
-The install of mmdetction.
+The installation of mmdetction.
 
 ```python
 cd mmdetection/
@@ -150,7 +150,7 @@ pip install scipy==1.2.1
 
 ### Baseline search algorithm 
 
-We implement the [SnP framework](https://github.com/yorkeyao/SnP) proposed by Yao etal. We have adapted the SnP framwork to the detection task, the [this repo](https://github.com/yorkeyao/DataCV2024/tree/main/SnP_detection) will create a searched training set with 8,000 images.   
+We implement the [SnP framework](https://github.com/yorkeyao/SnP) proposed by Yao etal. We have adapted the SnP framework to the detection task, the [this repo](https://github.com/yorkeyao/DataCV2024/tree/main/SnP_detection) will create a searched training set with 8,000 images.   
 
 ### Detection Model
 
