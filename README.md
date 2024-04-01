@@ -14,6 +14,14 @@ This year’s challenge focuses on **Training set search for object detection**.
 
 The competition will take place from Feb -- Apr 2024, and the top-performing teams will be invited to present their results at the workshop at [CVPR 2024](https://sites.google.com/view/vdu-cvpr24/home) in Jun, Seattle.
 
+## Top Solutions for DataCV2024
+
+Please see the code from the top teams in the 2024 DataCV Challenge (not in any particular order)
+
+* [[Onewo Space-Tech Service Co., Ltd.)]](https://github.com/welovecv/datac)
+
+* [[Layer6 AI]](https://github.com/himsR/DataCVChallenge-2024/tree/main)
+
 ## Challenge Data 
 
 Source pool: [[GoogleDrive]](https://drive.google.com/file/d/10kRIfJSxOdF84WMh9AR63YJDk07LPszo/view?usp=drive_link) and [[BaiduYun]](https://pan.baidu.com/s/1NeLvKAhrHgXn_Zul2VEfHw) (pwd: jp2x)
