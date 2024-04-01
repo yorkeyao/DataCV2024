@@ -18,7 +18,7 @@ The competition will take place from Feb -- Apr 2024, and the top-performing tea
 
 Please see the code from the top teams in the 2024 DataCV Challenge (not in any particular order)
 
-* [[Onewo Space-Tech Service Co., Ltd.]](https://github.com/welovecv/datac)
+* [[Onewo Space-Tech Service Co., Ltd.]](https://github.com/welovecv/datacv)
 
 * [[Layer6 AI]](https://github.com/himsR/DataCVChallenge-2024/tree/main)
 
